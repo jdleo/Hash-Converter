@@ -2,7 +2,28 @@
   text-align: center;
 }
 
+.Hash-block {
+   background-color: #0f284f;
+   margin-top: 10px;
+   margin-bottom: 30px;
+   padding: 30px;
+   border-radius: 45px;
+   display: inline-block;
+   box-shadow: 0 3px 5px rgba(0,0,0,0.12), 0 3px 4px rgba(0,0,0,0.24);
+}
+
 @media only screen and (max-width: 600px) {
+
+  .Hash-div {
+    margin: auto;
+    text-align: center;
+  }
+
+  .Hash-header {
+    font-size: 1.15em;
+    color: #0f284f;
+    font-weight: 500;
+  }
 
   .Main-header {
     margin-top: 50px;
@@ -13,7 +34,7 @@
 
   .Code-block {
     color: white;
-    font-size: 1.15em;
+    font-size: 0.65em;
   }
 
   .Input-bar {
@@ -21,6 +42,7 @@
     width: 68%;
     padding: 30px;
     padding-left: 45px;
+    margin-bottom: 30px;
     font-size: 1.15em;
     color: #0f284f;
     border-radius: 45px;
@@ -32,6 +54,17 @@
 
 @media only screen and (min-width: 601px) {
 
+  .Hash-div {
+    margin: auto;
+    text-align: center;
+  }
+
+  .Hash-header {
+    font-size: 1.35em;
+    color: #0f284f;
+    font-weight: 500;
+  }
+
   .Main-header {
     margin-top: 50px;
     color: #0f284f;
@@ -41,7 +74,7 @@
 
   .Code-block {
     color: white;
-    font-size: 1.35em;
+    font-size: 0.85em;
   }
 
   .Input-bar {
@@ -49,6 +82,7 @@
     width: 55%;
     padding: 30px;
     padding-left: 45px;
+    margin-bottom: 30px;
     font-size: 1.35em;
     color: #0f284f;
     border-radius: 45px;

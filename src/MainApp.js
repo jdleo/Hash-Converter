@@ -47,12 +47,14 @@ class MainApp extends React.Component {
 
     //map hash items
     const hashItems = hashes.map((hash) =>
-      <div key={"container_" + hash}>
-        <header key={"header_" + hash}>
+      <div className="Hash-div" key={"container_" + hash}>
+        <header className="Hash-header" key={"header_" + hash}>
           {hash}
         </header>
-        <div key={"block_" + hash}>
-          {this.supportedHash(txt, hash)}
+        <div className="Hash-block" key={"block_" + hash}>
+          <code className="Code-block">
+            {this.supportedHash(txt, hash)}
+          </code>
         </div>
       </div>
     );
