@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import GithubCorner from 'react-github-corner';
 const crypto = require('crypto');
 const hashes = [
   "sha1",
@@ -12,6 +13,11 @@ const hashes = [
 ];
 
 class MainApp extends React.Component {
+
+  //for github corner linking (change to your own url if you forked this)
+  gitHubUrl() {
+    return "https://github.com/jdleo/Hash-Converter"
+  }
 
   constructor(props) {
     super(props)
@@ -72,6 +78,14 @@ class MainApp extends React.Component {
           className="Input-bar"
         />
         {this.renderHashBlocks()}
+        <GithubCorner
+          href={this.gitHubUrl()}
+          bannerColor="#000"
+          octoColor="#fff"
+          size={80}
+          direction="right" 
+          svgStyle={{"mixBlendMode":"darken"}}
+        />
       </div>
     )
   }
